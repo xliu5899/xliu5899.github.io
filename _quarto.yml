@@ -1,0 +1,30 @@
+project:
+  type: website
+  render:
+    - home.qmd
+    - about.qmd
+    - Research.qmd
+    - projects
+
+website:
+  title: "Xiao Liu"
+  navbar:
+    left:
+      - href: home.qmd
+        text: Home
+      - about.qmd
+      - href: Research.qmd
+        text: Research
+      - href: projects/depression.qmd
+        text: Master's Thesis
+      - href: projects/addiction.qmd
+        text: Dissertation
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+
+editor: visual
+
